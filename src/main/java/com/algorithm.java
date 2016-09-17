@@ -26,11 +26,13 @@ public class algorithm {
 	String s = Integer.valueOf(1).toString();
 	String s="temp";
     s.charAt(1);
+    s.charAt(2);
 	*/
 	
 	
 	public static void quickSort(int[] arr, int low, int high) {
-		
+
+
 		
 		if (arr == null || arr.length == 0)
 			return;
