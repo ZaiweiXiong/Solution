@@ -20,23 +20,7 @@ import java.util.regex.Pattern;
 
 public class Solution {
 
-	public static void main(String[] args) {
-		//https://siddontang.gitbooks.io/leetcode-solution/content/
-		Solution solution = new Solution();
-		solution.reverseString("a plan");
-		int p=11;
-		
-		//System.out.println("reverse->"+solution.reverse(11));
-		int a=0;
-		for (int i=0;i<100;i++) {
-			
-			solution.reverse(689);
-			a+=i;
-			 
-		}
-		 System.out.println(a);
-		
-}
+
 	public int reverse(int x) {
 		//flag marks if x is negative
 		boolean flag = false;
