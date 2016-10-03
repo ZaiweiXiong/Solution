@@ -20,6 +20,8 @@ public class MainTest {
         System.out.println("testMethod");
         Solution s = new Solution();
         System.out.println(s.reverseString("type"));
+        System.out.println("test");
+
 
 
     }
@@ -37,6 +39,10 @@ public class MainTest {
         System.out.println("Top object is: "+stack.peek());
         System.out.println("Searching 'code' in stack: "+stack.search("Source"));
         System.out.println("Is stack empty: "+stack.empty());
+        TestStack ts = new TestStack();
+        ts.push("1");
+        ts.push("2");
+
     }
 
 
