@@ -121,4 +121,27 @@ public class algorithm {
 	 
 		return total[0];
 	}
+	
+	public static boolean palinDromeNumber(int x){
+		
+		char[] a =  Integer.toString(x).toCharArray();
+		
+		String temp = "";
+		
+		for (int i=a.length-1;i>=0;i--) {
+			
+			temp+=a[i]; 
+		}
+		
+		String str = new String(temp);
+		
+		
+		if (!Integer.toString(x).equals(str)) {
+			
+			return false;
+		}
+		
+			return true;
+	}
+	
 }
