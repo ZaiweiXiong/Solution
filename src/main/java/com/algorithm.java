@@ -144,4 +144,24 @@ public class algorithm {
 			return true;
 	}
 	
+	public static int binarySearch (int a [], int first,int last,int toSearchNumber) {
+		
+		if (last>=first){
+			
+			int mid = first + (last - first)/2;
+			if (a[mid]==toSearchNumber) {
+				
+				return mid;
+			}
+			if (a[mid]>toSearchNumber) {
+				
+				return binarySearch (a,  first,mid-1,toSearchNumber);
+			}else {
+				
+				return binarySearch (a,   mid+1,last,toSearchNumber);
+			}
+		}
+		  return -1;
+	}
+	
 }
