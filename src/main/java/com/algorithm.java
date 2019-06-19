@@ -7,6 +7,7 @@ public class algorithm {
 
 	//http://www.csdn.net/article/2014-04-10/2819237-Top-10-Algorithms-for-Coding-Interview
 	//http://www.jiuzhang.com/course/1/
+	//https://www.geeksforgeeks.org/remove-an-element-at-specific-index-from-an-array-in-java/
 	/*
 	toCharArray() //get char array of a String
 	Arrays.sort()  //sort an array
@@ -191,6 +192,51 @@ public class algorithm {
 
             return j;
 
+        }
+		
+		static bool isNotFour(int n)
+        {
+            return n != 4;
+        }
+
+		public int [] deleteOneNumber(int [] a, int key) {
+
+            int index = findNumer(a, key);
+            int [] temp = new int [a.Length-1] ;
+            int j =0;
+            for (int i = 0; i < a.Length;i++ )
+            {
+
+                if (i == index) {
+
+                    continue;
+                }
+
+                temp[j++] = a[i];
+
+            }
+
+            for (int i = 0; i < j;i++ )
+            {
+                Console.WriteLine(temp[i]);
+            }
+
+
+             return temp;
+        }
+		
+		public int findNumer(int[] a, int key)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (key == a[i])
+                {
+
+                    return i;
+                }
+            }
+
+                return -1;
         }
 
 	
